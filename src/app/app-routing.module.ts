@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LayoutComponent } from './layout/layout.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 import { TablesComponent } from './tables/tables.component';
 import { TestComponent } from './test/test.component';
 
@@ -13,6 +14,12 @@ const routes: Routes = [
     children: [
       {
         path: '',
+        // component: DashboardComponent
+        redirectTo: 'dashboard', // => 轉址到 dashboard
+        pathMatch: 'full'
+      },
+      {
+        path: 'dashboard',
         component: DashboardComponent
       },
       {
@@ -22,6 +29,10 @@ const routes: Routes = [
       {
         path: 'test',
         component: TestComponent
+      },
+      {
+        path: '**',
+        component: NotFoundComponent
       }
     ]
   }
