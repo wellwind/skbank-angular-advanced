@@ -251,7 +251,7 @@
             <!-- /input-group -->
           </li>
           <li>
-            <a [routerLink]="['/dashboard']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <a [routerLink]="['/dashboard']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
               <i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
           </li>
           <li>
@@ -270,7 +270,7 @@
             <!-- /.nav-second-level -->
           </li>
           <li>
-            <a [routerLink]="['/', 'tables']" routerLinkActive="active">
+            <a [routerLink]="['/', 'tables', dataId, 'test']" routerLinkActive="active-link">
               <i class="fa fa-table fa-fw"></i> Tables</a>
           </li>
           <li>

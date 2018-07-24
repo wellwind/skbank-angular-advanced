@@ -27,6 +27,10 @@ const routes: Routes = [
         component: TablesComponent
       },
       {
+        path: 'tables/:id/:title',
+        component: TablesComponent
+      },
+      {
         path: 'test',
         component: TestComponent
       },
@@ -41,7 +45,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
-      enableTracing: true,
+      // enableTracing: true,
       useHash: true
     })
   ],
