@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
-declare var $: any;
+// declare var $: any;
 declare var Morris: any;
 
 @Component({
@@ -154,8 +154,8 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    $(this.pageHeader.nativeElement);
-    $('#pageHeader');
+    // $(this.pageHeader.nativeElement);
+    // $('#pageHeader');
     console.log(this.pageHeader);
   }
 }
