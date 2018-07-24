@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { Page1Component } from './dashboard/page1/page1.component';
+import { Page2Component } from './dashboard/page2/page2.component';
 import { LayoutComponent } from './layout/layout.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { TablesComponent } from './tables/tables.component';
@@ -21,6 +23,14 @@ const routes: Routes = [
       {
         path: 'dashboard',
         component: DashboardComponent
+      },
+      {
+        path: 'dashboard/page1',
+        component: Page1Component
+      },
+      {
+        path: 'dashboard/page2',
+        component: Page2Component
       },
       {
         path: 'tables',
